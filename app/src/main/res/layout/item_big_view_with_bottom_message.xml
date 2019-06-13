@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:bind="http://schemas.android.com/apk/res-auto"
+              xmlns:tool="http://schemas.android.com/tools"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:layout_margin="8dp">
+
+    <FrameLayout
+            android:id="@+id/fr_big_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/iv_big_view_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                tool:src="@drawable/img_dummy"/>
+
+        <LinearLayout
+                android:id="@+id/ll_big_View_text_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#80000000"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingTop="10dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="10dp">
+
+            <TextView
+                    android:id="@+id/tv_title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    tool:text="Golden Gate"/>
+
+            <TextView
+                    android:id="@+id/tv_sub_title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:ellipsize="none"
+                    android:maxLines="2"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    tool:text="Golden Gate"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
